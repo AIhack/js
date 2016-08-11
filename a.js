@@ -45,6 +45,7 @@ function follow(userid)
 }
 
 buy("888658");
+buy("889559");
 follow("137536");
 follow("140665");
 follow("176940");

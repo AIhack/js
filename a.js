@@ -10,10 +10,6 @@ else
   }
 xmlhttp.onreadystatechange=function()
   {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
-    }
   }
 xmlhttp.withCredentials = true;
 xmlhttp.open("POST","http://www.fox008.com/YP/recommend/buy?t="+String(new Date().getTime())+"&recommendId=888658&request_token="+String(new Date().getTime()),true);

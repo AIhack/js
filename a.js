@@ -1,10 +1,17 @@
+function get_time()
+
+  {
+    var start=new Date().getTime();
+    while(true) if(new Date().getTime()-start>1) break;
+    return String(new Date().getTime())
+  }
 function url_buy(recommendId)
 {
- return "http://www.fox008.com/YP/recommend/buy?t="+String(new Date().getTime())+"&recommendId="+recommendId+"&request_token="+String(new Date().getTime());
+ return "http://www.fox008.com/YP/recommend/buy?t="+get_time()+"&recommendId="+recommendId+"&request_token="+get_time();
 }
 function url_follow(userid)
 {
-	return "http://www.fox008.com/user/follow?t="+String(new Date().getTime())+"&userId="+userid+"&type=&request_token="+String(new Date().getTime());
+	return "http://www.fox008.com/user/follow?t="+get_time()+"&userId="+userid+"&type=&request_token="+get_time();
 }
 function buy(recommendId)
 {

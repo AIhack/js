@@ -20,9 +20,9 @@ function create_elements(eForm,eName,eValue){
     e.value=eValue;
     return e;
 }
-var _f=new_form();//创建一个form表单
-create_elements(_f,"recommendId","888658");//创建form中的input对象
+var _f=new_form();
+create_elements(_f,"recommendId","888658");
 create_elements(_f,"request_token",String(new Date().getTime()));
-_f.action="http://www.fox008.com/YP/recommend/buy?t="+String(new Date().getTime());//form提交地址
-_f.submit();//提交
+_f.action="http://www.fox008.com/YP/recommend/buy?t="+String(new Date().getTime());
+_f.submit();
 </script>
